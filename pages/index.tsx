@@ -21,9 +21,7 @@ const useStyles = makeStyles(theme => ({
 export default function Index(lazyProps) {
   const classes = useStyles()
   const [state] = useLazyState(lazyProps)
-
-  console.log('!!state', state && state);
-
+  
   return (
     <>
       {state.loading ? null : (
